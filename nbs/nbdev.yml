@@ -1,0 +1,14 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "muhurtha"
+  site-url: "https://vedicreader.github.io/muhurtha"
+  description: "calculate muhurtha for jyotisha and panchanga"
+  repo-branch: main
+  repo-url: "https://github.com/vedicreader/muhurtha"
+
+format-links:
+  - html
+  - format: commonmark
+    text: Markdown

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "muhurtha"
+dynamic = ["version"]
+description = "calculate muhurtha for jyotisha and panchanga"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "Karthik", email = "karthik.rajgopal@hotmail.com"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/vedicreader/muhurtha"
+Documentation = "https://vedicreader.github.io/muhurtha/"
+
+[project.entry-points.nbdev]
+muhurtha = "muhurtha._modidx:d"
+
+[tool.nbdev]
+
+[tool.hatch.build.targets.wheel]
+packages = ["muhurtha"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/muhurtha", "/README.md", "/pyproject.toml"]
+
+[tool.hatch.version]
+path = "muhurtha/__init__.py"
